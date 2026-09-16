@@ -1,12 +1,18 @@
-import Nav from '../components/Nav'
+import React from 'react'
+import Header from '../components/Header'
+import ContactSection from '../components/ContactSection'
+import TestimonialsSection from '../components/TestimonialsSection'
+import Footer from '../components/Footer'
 
 export default function Contact() {
   return (
-    <div className="min-h-screen bg-[#f3f4f6] flex flex-col items-center pt-8 px-4">
-      <Nav />
-      <main className="mt-16 text-center">
-        <h1 className="text-4xl font-bold text-neutral-900 tracking-tight">Contact</h1>
+    <div className="min-h-screen bg-[#FBFBFB] text-[#111111] overflow-x-hidden pt-20">
+      <Header />
+      <main>
+        <ContactSection />
+        <TestimonialsSection />
       </main>
+      <Footer />
     </div>
   )
 }
